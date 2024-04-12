@@ -9,7 +9,8 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f0f0f0;
+            color: var(--tg-theme-text-color);
+            background: var(--tg-theme-bg-color);
         }
         header {
             background-color: #333;
@@ -36,6 +37,24 @@
             padding: 10px;
             text-align: center;
         }
+
+        button {
+            border: 0;
+            border-radius: 5px;
+            margin-top: 50px;
+            height: 60px;
+            width: 200px;
+            font-size: 20px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 500ms ease;
+            color: var(--tg-theme-button-color);
+            background: var(--tg-theme-button-text-color);
+        }
+
+        button:hover{
+            background: var(--tg-theme-secondary-bg-color);
+        }
     </style>
 </head>
 <body>
@@ -49,10 +68,12 @@
     </nav>
     <section>
         <h2>About Us</h2>
+        <img src="https://st4.depositphotos.com/1277251/20728/i/450/depositphotos_207289098-stock-photo-magical-smoke-hazy-dark-background.jpg">
         <p>This is a simple webpage created using HTML.</p>
     </section>
     <footer>
         <p>&copy; 2024 My Webpage. All rights reserved.</p>
     </footer>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
 </body>
 </html>
